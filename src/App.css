@@ -39,18 +39,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 body{
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
 }
 /* =====================navbar========================= */
 .logo{
+  /* padding:0;
+  margin-top:1rem; */
   width: 10.25rem;
   height: 7rem;
   border-radius: 50%;
 }
+.navbar-expand-lg {
+  /* height:5rem; */
+  z-index: 2;
+}
 nav a.nav-link{
+  font-size: 20px;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 nav ul li{
+  
   text-transform: uppercase;
 }
  nav li a{
@@ -69,4 +78,68 @@ nav ul li{
 }
 .navbar-nav li a:hover{
   border-top: 2px solid red;
+}
+
+/* =======header wraper=== */
+.header-wraper{
+  position: relative;
+  background: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+
+}
+.main-info h1{
+  color:rgb(177, 191, 211);
+  text-transform: uppercase;
+}
+/* +============typed=text= */
+.typed-text{
+  font-size: 2rem;
+  font-weight: 700;
+  color:white;
+}
+/* ========btn-main-offer */
+.btn-main-offer{
+  text-transform: uppercase;
+  border: 3px solid rgb(33, 5, 109);
+  border-radius: 0;
+  margin-top: 1.5rem;
+  color:rgb(226, 223, 49);
+  padding: 10px 12px 12px 12px;
+  font-weight: 700;
+}
+.btn-main-offer:link{
+text-decoration: none;
+}
+.btn-main-offer:hover{
+  text-decoration: none;
+  color: white;
+  background-color: rgba(189, 172, 211, 0.295);
+  }
+ 
+.tsparticles-canvas-el{
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+@media(max-width:768px){
+  .particles-can{
+    display: none;
+  }
 }
